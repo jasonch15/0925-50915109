@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記憶挑戰遊戲</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUa2YrvwNWaWxVtpOTa0C41Z9no/+7VpSf0DshHgQ8hMPeMF04pD8KYYj4jH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body class="d-flex flex-column justify-content-center align-items-center text-center">
+    <div class="d-flex justify-content-center align-items-center">
+        <h1 class="mb-4">記憶挑戰遊戲</h1>
+        <button id="switchThemeButton" class="btn btn-info ms-3"
+            style="display: none; padding: 0.5rem 1.5rem; border-radius: 30px; font-size: 1rem;">切換主題</button>
+    </div>
+    <button id="startButton" class="btn btn-lg btn-primary mb-4 shadow-sm"
+        style="padding: 0.75rem 2rem; border-radius: 30px; font-size: 1.25rem;">開始遊戲</button>
+    <div id="gameContainer" style="display: none;">
+        <div id="game" class="container"></div>
+    </div>
+    <div id="overlay" class="d-flex justify-content-center align-items-center">
+        <div id="result" class="text-center p-4 rounded shadow bg-white">
+            <p id="resultMessage"></p>
+            <button id="restartButton" class="btn btn-success mt-3">再玩一次</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
